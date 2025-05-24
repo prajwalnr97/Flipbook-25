@@ -2,24 +2,28 @@
 <html>
 <head>
 	<title>Mise En Scene</title>
+	<div style="album" align="left">
 	<style type="text/css">
 		html, body 
-		
 		#album {
-			width: 2200px;
+			position: fixed;
+			width: 2100px;
 			height: 700px;
-			margin: 5% auto;
-		}
+			/*margin: 3%;*/
+			bottom: 150px;
+			left: 2%;
+
 
 		#album > div {
+			z-index: 10;
 			box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 		}
 
 		/* Optional: Style for navigation buttons */
 		#nav-buttons {
 			position: fixed;
-			bottom: 600px;
-			left: 50%;
+			bottom: 700px;
+			left: 20%;
 			transform: translateX(-50%);
 			z-index: 10;
 		}
@@ -38,45 +42,41 @@
 		#nav-buttons button:hover {
 			background-color: #444;
 		}
-
-		#nav-buttons button:hover {
-			background-color: #444;
-		}
 	</style>
+	</div>
 </head>
 <body>
-
 	<!-- Navigation buttons -->
-	<div id="nav-buttons">
+		<div id="nav-buttons">
 		<button onclick="$('#album').turn('previous')">Previous</button>
 		<button onclick="$('#album').turn('next')">Next</button>
-	</div>
-
+		</div>
+	<!-- Album Images -->
 	<div id="album">
 		<div style="background: url(tpbc1.jpg); background-size: cover;"></div>
-<div style="background: url(tpbc2.jpg); background-size: cover;"></div>
-<div style="background: url(tpbc3.jpg); background-size: cover;"></div>
-<div style="background: url(tpbc4.jpg); background-size: cover;"></div>
-<div style="background: url(tpbc5.jpg); background-size: cover;"></div>
-<div style="background: url(tpbc6.jpg); background-size: cover;"></div>
-<div style="background: url(tpbc7.jpg); background-size: cover;"></div>
-<div style="background: url(tpbc8.jpg); background-size: cover;"></div>
-<div style="background: url(tpbc9.jpg); background-size: cover;"></div>
-<div style="background: url(tpbc10.jpg); background-size: cover;"></div>
-<div style="background: url(tpbc11.jpg); background-size: cover;"></div>
-<div style="background: url(tpbc12.jpg); background-size: cover;"></div>
-<div style="background: url(tpbc13.jpg); background-size: cover;"></div>
-<div style="background: url(tpbc14.jpg); background-size: cover;"></div>
-<div style="background: url(tpbc15.jpg); background-size: cover;"></div>
-<div style="background: url(tpbc16.jpg); background-size: cover;"></div>
-<div style="background: url(tpbc17.jpg); background-size: cover;"></div>
-<div style="background: url(tpbc18.jpg); background-size: cover;"></div>
-<div style="background: url(tpbc19.jpg); background-size: cover;"></div>
-<div style="background: url(tpbc20.jpg); background-size: cover;"></div>
-<div style="background: url(tpbc21.jpg); background-size: cover;"></div>
-<div style="background: url(tpbc22.jpg); background-size: cover;"></div>
-<div style="background: url(tpbc23.jpg); background-size: cover;"></div>
-<div style="background: url(tpbc24.jpg); background-size: cover;"></div>
+		<div style="background: url(tpbc2.jpg); background-size: cover;"></div>
+		<div style="background: url(tpbc3.jpg); background-size: cover;"></div>
+		<div style="background: url(tpbc4.jpg); background-size: cover;"></div>
+		<div style="background: url(tpbc5.jpg); background-size: cover;"></div>
+		<div style="background: url(tpbc6.jpg); background-size: cover;"></div>
+		<div style="background: url(tpbc7.jpg); background-size: cover;"></div>
+		<div style="background: url(tpbc8.jpg); background-size: cover;"></div>
+		<div style="background: url(tpbc9.jpg); background-size: cover;"></div>
+		<div style="background: url(tpbc10.jpg); background-size: cover;"></div>
+		<div style="background: url(tpbc11.jpg); background-size: cover;"></div>
+		<div style="background: url(tpbc12.jpg); background-size: cover;"></div>
+		<div style="background: url(tpbc13.jpg); background-size: cover;"></div>
+		<div style="background: url(tpbc14.jpg); background-size: cover;"></div>
+		<div style="background: url(tpbc15.jpg); background-size: cover;"></div>
+		<div style="background: url(tpbc16.jpg); background-size: cover;"></div>
+		<div style="background: url(tpbc17.jpg); background-size: cover;"></div>
+		<div style="background: url(tpbc18.jpg); background-size: cover;"></div>
+		<div style="background: url(tpbc19.jpg); background-size: cover;"></div>
+		<div style="background: url(tpbc20.jpg); background-size: cover;"></div>
+		<div style="background: url(tpbc21.jpg); background-size: cover;"></div>
+		<div style="background: url(tpbc22.jpg); background-size: cover;"></div>
+		<div style="background: url(tpbc23.jpg); background-size: cover;"></div>
+		<div style="background: url(tpbc24.jpg); background-size: cover;"></div>
 <div style="background: url(tpbc25.jpg); background-size: cover;"></div>
 <div style="background: url(tpbc26.jpg); background-size: cover;"></div>
 <div style="background: url(tpbc27.jpg); background-size: cover;"></div>
