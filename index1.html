@@ -1,76 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mise En Scene</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      background: url(bg.jpg) no-repeat center center fixed;
-      background-size: cover;
-      font-family: Arial, sans-serif;
-    }
+	<title>Mise En Scene</title>
+	<style type="text/css">
+		html, body {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			background: url(bg.jpg);
+		}
 
-    #album {
-      width: 90vw;         /* Responsive width relative to viewport */
-      max-width: 2200px;   /* Max width for large screens */
-      height: 60vh;        /* Responsive height relative to viewport */
-      max-height: 750px;   /* Max height */
-      margin: 5vh auto;
-      box-shadow: 0 0 20px rgba(0,0,0,0.3);
-    }
+		#album {
+			width: 2100px;
+			height: 700px;
+			margin: 5% auto;
+		}
 
-    #album > div {
-      background-size: cover;
-      background-position: center center;
-      width: 100%;
-      height: 100%;
-      box-shadow: inset 0 0 15px rgba(0,0,0,0.3);
-    }
+		#album > div {
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+		}
 
-    #nav-buttons {
-      position: fixed;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 10;
-      display: flex;
-      gap: 10px;
-    }
+		/* Optional: Style for navigation buttons */
+		#nav-buttons {
+			position: fixed;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 10;
+		}
 
-    #nav-buttons button {
-      padding: 10px 20px;
-      background-color: #2e3791;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
+		#nav-buttons button {
+			padding: 10px 20px;
+			margin: 0 10px;
+			background-color: #2e3791;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-weight: bold;
+		}
 
-    #nav-buttons button:hover {
-      background-color: #444;
-    }
-
-    /* Make sure flipbook container scrolls horizontally on very small devices */
-    @media (max-width: 600px) {
-      #album {
-        height: 50vh;
-      }
-    }
-  </style>
+		#nav-buttons button:hover {
+			background-color: #444;
+		}
+	</style>
 </head>
 <body>
 
-  <div id="nav-buttons">
-    <button onclick="$('#album').turn('previous')">Previous</button>
-    <button onclick="$('#album').turn('next')">Next</button>
-  </div>
-
+	<!-- Navigation buttons -->
+	<div id="nav-buttons">
+		<button onclick="$('#album').turn('previous')">Previous</button>
+		<button onclick="$('#album').turn('next')">Next</button>
+	</div>
 
 	<div id="album">
 		<div style="background: url(tpbc1.jpg); background-size: cover;"></div>
@@ -257,6 +240,6 @@
 			}
 		});
 	</script>
-	
+
 </body>
 </html>
